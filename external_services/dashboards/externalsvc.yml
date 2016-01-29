@@ -1,0 +1,151 @@
+title: External Services
+period: 600
+positions:
+  - title: PagerDuty Global
+    data_type: nagios
+    type: status
+    color: navy
+    row: 1
+    col: 1
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: pagerduty.status
+        scope:
+          tag: externalsvc
+  - title: PD Integration API
+    data_type: nagios
+    type: status
+    color: navy
+    row: 1
+    col: 2
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: pagerduty_integration_api.status
+        scope:
+          tag: externalsvc
+  - title: PagerDuty REST API
+    data_type: nagios
+    type: status
+    color: navy
+    row: 1
+    col: 3
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: pagerduty_rest_api.status
+        scope:
+          tag: externalsvc
+  - title: PD Notifications
+    data_type: nagios
+    type: status
+    color: navy
+    row: 1
+    col: 4
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: pagerduty_notification_delivery.status
+        scope:
+          tag: externalsvc
+  - color: navy
+    row: 1
+    col: 5
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series: []
+  - title: Atlassian Cloud
+    data_type: nagios
+    type: status
+    color: navy
+    row: 2
+    col: 1
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: atlassian_cloud.status
+        scope:
+          tag: externalsvc
+  - title: Atlassian API
+    data_type: nagios
+    type: status
+    color: olive
+    row: 2
+    col: 2
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: atlassian_cloud_api.status
+        scope:
+          tag: externalsvc
+  - title: Bamboo Cloud
+    data_type: nagios
+    type: status
+    color: blue
+    row: 2
+    col: 3
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: atlassian_cloud_bamboo.status
+        scope:
+          tag: externalsvc
+  - title: Cloud Confluence
+    data_type: nagios
+    type: status
+    color: teal
+    row: 2
+    col: 4
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: atlassian_cloud_confluence.status
+        scope:
+          tag: externalsvc
+  - title: Cloud JIRA
+    data_type: nagios
+    type: status
+    color: fuchsia
+    row: 2
+    col: 5
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: atlassian_cloud_jira.status
+        scope:
+          tag: externalsvc
+  - title: GitHub
+    data_type: nagios
+    type: status
+    color: navy
+    row: 3
+    col: 1
+    size_x: 1
+    size_y: 1
+    legend: false
+    icon: true
+    series:
+      - metric: github.status
+        scope:
+          tag: externalsvc

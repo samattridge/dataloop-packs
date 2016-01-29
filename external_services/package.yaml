@@ -1,9 +1,9 @@
-title: GitHub
+title: External Services
 author: DevOps Guys ltd.
 version: 1.0.0
-description: GitHub Platform Status Monitoring
+description: External Service Platform Status Monitoring
 instructions_required: true
 icon:
-    name: git
+    name: process
     background: white
     foreground: black

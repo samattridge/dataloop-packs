@@ -1,0 +1,110 @@
+title: GitHub
+criteria:
+  - metric: github.status
+    scope:
+      tag: externalsvc
+    condition:
+      timeout: 120
+      threshold: false
+actions:
+  - emails: []
+    message: ''
+title: PagerDuty
+criteria:
+  - metric: pagerduty.status
+    scope:
+      tag: externalsvc
+    condition:
+      timeout: 120
+      threshold: false
+actions:
+  - emails: []
+    message: ''
+    title: PagerDuty REST API
+    criteria:
+      - metric: pagerduty_rest_api.status
+        scope:
+          tag: externalsvc
+        condition:
+          timeout: 120
+          threshold: false
+    actions:
+      - emails: []
+        message: ''
+title: PagerDuty Integration API
+criteria:
+  - metric: pagerduty_integration_api.status
+    scope:
+      tag: externalsvc
+    condition:
+      timeout: 120
+      threshold: false
+actions:
+  - emails: []
+    message: ''
+    title: PagerDuty Notification Delivery
+    criteria:
+      - metric: pagerduty_notification_delivery.status
+        scope:
+          tag: externalsvc
+        condition:
+          timeout: 120
+          threshold: false
+    actions:
+      - emails: []
+        message: ''
+title: Atlassial Cloud
+criteria:
+  - metric: atlassian_cloud.status
+    scope:
+      tag: externalsvc
+    condition:
+      timeout: 120
+      threshold: false
+actions:
+  - emails: []
+    message: ''
+title: Atlassian Cloud API
+criteria:
+  - metric: atlassian_cloud_api.status
+    scope:
+      tag: externalsvc
+    condition:
+      timeout: 120
+      threshold: false
+actions:
+  - emails: []
+    message: ''
+title: Atlassian Cloud Bamboo
+criteria:
+  - metric: atlassian_cloud_bamboo.status
+    scope:
+      tag: externalsvc
+    condition:
+      timeout: 120
+      threshold: false
+actions:
+  - emails: []
+    message: ''
+title: Atlassian Cloud Confluence
+criteria:
+- metric: atlassian_cloud_confluence.status
+scope:
+  tag: externalsvc
+condition:
+  timeout: 120
+  threshold: false
+actions:
+- emails: []
+message: ''
+title: Atlassian Cloud JIRA
+criteria:
+  - metric: atlassian_cloud_jira.status
+    scope:
+      tag: externalsvc
+    condition:
+      timeout: 120
+      threshold: false
+actions:
+  - emails: []
+    message: ''
