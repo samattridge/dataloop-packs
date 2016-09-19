@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 import sys
 import requests
-from socket import gethostname
 
-URL = 'http://%s:8098/stats' % gethostname()
+URL = 'http://127.0.0.1:8098/stats'
 
 try:
     resp = requests.get(URL).json()
@@ -15,7 +14,7 @@ except Exception, e:
 result = "OK | "
 for k, v in resp.iteritems():
     if isinstance(v, int) or isinstance(v, float):
-            if 'time' in k:
+            if 'time' in k or 'latency' in k:
                 result += str(k) + '=' + str(v/1000) + 'ms;;;; '
             else:
                 result += str(k) + '=' + str(v) + ';;;; '
